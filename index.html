@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Software Company</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="Main hidden md:flex justify-between items-center py-4 px-6 text-white">
+    <h3 class="text-sm text-[#acacab]">
+      CONNECT WITH CLIENTS THROUGH IMPACTFUL VISUALS.
+    </h3>
+
+    <ul class="flex gap-6 items-center">
+      <li><a href="#">NewsRoom</a></li>
+      <li class="border-l pl-4"><a href="#">Career</a></li>
+      <li class="border-l pl-4"><a href="#">Contact Us</a></li>
+      <li class="flex">
+        <img src="icons/images.png" class="rounded-full w-8 "/>
+        <select class="text-white px-1">
+          
+          <option class="text-black ">EN</option>
+          
+          <option class="text-black ">AR</option>
+        </select>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar flex justify-between items-center px-6 py-4 text-white">
+   <img src="images/Clip-path-group.png" class="w-50"/>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex gap-8 nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Tech Stacks</a></li>
+      <li><a href="#">Industries</a></li>
+      <li><a href="#">Case Studies</a></li>
+    </ul>
+
+    <!-- Hamburger -->
+    <div id="menuBtn" class="menu-btn md:hidden">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu hidden">
+    <ul class="flex flex-col gap-4">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Tech Stacks</a></li>
+      <li><a href="#">Industries</a></li>
+      <li><a href="#">Case Studies</a></li>
+      <li><a href="#">NewsRoom</a></li>
+      <li><a href="#">Career</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <div class="main-container w-full h-80">
+
+   
+    <div class="flex justify-center gap-2 sm:gap-4 mt-4 sm:mt-6 w-full max-w-full sm:max-w-md  rounded-lg">
+      
+      <button onclick="goToSlide(0)" class="px-4 py-2 text-white rounded-full active:bg-[#ecbe13] hover:cursor-pointer transition">
+        1
+      </button>
+     
+      <button onclick="goToSlide(1)" class="px-4 py-2  text-white rounded-full active:bg-[#ecbe13] hover:cursor-pointer transition">
+        2
+      </button>
+    
+    </div>
+
+    
+
+    <!-- Flex Container for Slider and Image -->
+    <div class="flex flex-row justify-between  mr-30 items-center ">
+
+      <!-- Slider Container -->
+      <div
+        class="w-full max-w-full sm:max-w-2xl lg:max-w-xl  min-h-[350px] sm:h-80 lg:h-[350px] overflow-hidden text-white">
+
+        <!-- SLIDES -->
+        <div id="slides" class="flex w-[200%] transition-transform duration-500 ease-in-out">
+
+          <!-- SLIDE 1 -->
+          <div class="w-full p-4 sm:p-6 md:p-8">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 leading-tight">AI-Powered Tech <br> Solutions that Deliver <br> Real ROI
+            </h1>
+            <span class="text-yellow-400">🔥Tired of good Enough Tech Partners?</span>
+            <p class="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed">
+              We're the special forces of software development—deploying elite teams of AI commandos, cloud ninjas, and
+              cybersecurity snipers to turn your digital nightmares into unfair advantages.
+            </p>
+          </div>
+
+          <!-- SLIDE 2 -->
+          <div class="w-full p-4 sm:p-6 md:p-8">
+            <h1 class="text-2xl  md:text-4xl lg:text-5xl font-bold mb-5 leading-tight">Tech So Sharp, It Cuts <br>Through Complexity 
+            </h1>
+            <span class="text-yellow-400">🔥Tired of good Enough Tech Partners?</span>
+            <p class="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed">
+              We're the special forces of software development—deploying elite teams of AI commandos, cloud ninjas, and
+              cybersecurity snipers to turn your digital nightmares into unfair advantages.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Image Container - Hidden on Mobile, Visible on Desktop -->
+      <div class="hidden md:block w-full md:w-[280px] lg:w-[300px] h-[300px] md:h-[350px] overflow-hidden relative">
+        <img id="parallaxImage" fetchpriority="high" decoding="async" src="images/Group-30.png" alt="Tech Solutions"
+          class=" image w-full h-full object-cover object-center">
+      </div>
+    </div>
+
+  </div>
+
+
+  <div>
+    <button
+      class="px-5 mt-50 lg:mt-20 py-4 text-yellow-600 font-bold rounded-xl hover:cursor-pointer border-1 rounded ml-6 border-yellow-600 ">
+      Get a Free Consultation
+    </button>
+  </div>
+
+
+  <div class="sub-container mt-20">
+    <div class="italic flex justify-center text-xl lg:text-8xl md:text-6xl font-bold text-gray-300/10  leading-none">
+      <h1>SERVICES</h1>
+    </div>
+
+    <div
+      class="inner- container flex justify-center flex-col items-center relative bottom-3 md:bottom-4 lg:bottom-5 left-4 italic lg:text-2xl  text-white leading-tight">
+      <h3 class="text-white mt-0">HELP YOU TO SUCCEED IN THE MARKET</h3>
+      <p class="text-white text-[15px] mt-5 lg:ml-3 w-100 lg:w-200">MAKE YOUR BUSINESS GOAL A REALITY BY CREATING VISUALS THAT DIRECTLY SPEAKS
+        TO YOUR CLIENT</p>
+    </div>
+  </div>
+
+
+
+  <div class="content-container flex flex-wrap mr-0 mt-10 text-[#aaaaa9] text-lg">
+    <div class="div-1 w-100 lg:border-b pl-7  ">
+      <img src="images/1.gif" alt="Service 1" class="w-60 h-60" />
+      <h1 class="font-bold text-xl text-white pb-4">AI and Data Services</h1>
+      <p class="pb-5">Harness the power of artificial intelligence and data analytics to drive innovation, efficiency,
+        and growth.</p>
+      <ul>
+        <li>
+          <a class=" hover:text-yellow-400" href="#">AI and Machine Learning &nearr;</a>
+        </li>
+        <li><a class=" hover:text-yellow-400" href="#">Data Analytics and BI &nearr;</a></li>
+        <li><a class=" hover:text-yellow-400" href="#">Big Data Solution &nearr;</a></li>
+        <li><a class=" hover:text-yellow-400" href="#">Predictive Analytics &nearr;</a></li>
+        <li><a class=" hover:text-yellow-400" href="#">Generative AI and LLMs &nearr;</a></li>
+      </ul>
+    </div>
+    <div class="div-2  w-100 lg:border-l lg:border-b pl-7">
+      <img src="images/6.gif" alt="Service 1" class="w-60 h-60" />
+      <h2 class="font-bold text-xl pb-4 text-white">Application Development</h2>
+      <p>Application Development is the process of creating and deploying software applications.</p>
+      <ul>
+        <li>
+          <a class=" hover:text-yellow-400" href="#">Web Development (Frontend, Backend, Full-Stack) &nearr;</a>
+        </li>
+        <li><a class=" hover:text-yellow-400" href="#">Mobile Development (iOS, Android) &nearr;</a></li>
+        <li><a class=" hover:text-yellow-400" href="#">Cross-Platform Development (Flutter, React Native) &nearr;</a>
+        </li>
+        <li><a class=" hover:text-yellow-400" href="#">Progressive Web Apps (PWA) &nearr;</a></li>
+        <li><a class=" hover:text-yellow-400" href="#">Low-Code/No-Code Solutions &nearr;</a></li>
+      </ul>
+    </div>
+    <div class="div-3  w-100 lg:border-l  lg:border-b  pl-7">
+      <img src="images/5.gif" alt="Service 1" class="w-60 h-60" />
+      <h2 class="font-bold text-xl pb-4 text-white">Cloud Computing & DevOps</h2>
+      <p>Cloud Computing delivers scalable IT resources online, and DevOps automates software delivery.</p>
+      <ul>
+        <li>
+          <a class=" hover:text-yellow-400" href="#">Cloud Development (Server less, Microservices) &nearr;</a>
+        </li>
+        <li><a class=" hover:text-yellow-400" href="#">Cloud Migration & Modernization &nearr;</a></li>
+        <li><a class=" hover:text-yellow-400" href="#">Multi-Cloud & Hybrid Cloud &nearr;</a></li>
+        <li><a class=" hover:text-yellow-400" href="#">DevOps & CI/CD Automation &nearr;</a></li>
+        <li><a class=" hover:text-yellow-400" href="#">Infrastructure as Code (IaC) &nearr;</a></li>
+      </ul>
+     
+    </div>
+
+   
+    <div class="div-4 w-100  pl-7 ">
+
+      <img src="images/4.gif" alt="Service 1" class="w-60 h-60" />
+      <h2 class="font-bold text-xl pb-4 text-white">Software & Product Development</h2>
+      <p>Software Development is the process of designing, coding, and maintaining software applications.</p>
+      <ul>
+        <li>
+          <a class=" hover:text-yellow-400" href="#">Custom Software Development &nearr;</a>
+        </li>
+        <li><a class=" hover:text-yellow-400" href="#">Product Engineering (MVP to Scalable Solutions) &nearr;</a></li>
+        <li><a class=" hover:text-yellow-400" href="#">IoT & Embedded Systems &nearr;</a></li>
+        <li><a class=" hover:text-yellow-400" href="#">Legacy System Modernization &nearr;</a></li>
+        <li><a class=" hover:text-yellow-400" href="#">API Development & Integration &nearr;</a></li>
+        <li><a class=" hover:text-yellow-400" href="#">Quality Assurance (QA) & Test Automation &nearr;</a></li>
+      </ul>
+
+    </div>
+    <div class="div-5 lg:border-l w-100 pl-7">
+      <img src="images/3.gif" alt="Service 1" class="w-60 h-60" />
+      <h2 class="font-bold text-xl pb-4 text-white">IT Staff Augmentation & Consulting</h2>
+      <p>IT Staff Augmentation involves hiring external experts to fill skill gaps, while IT Consulting provides
+        strategic advice.</p>
+      <ul>
+        <li>
+          <a href="#">Dedicated Development Teams &nearr;</a>
+        </li>
+        <li><a class=" hover:text-yellow-400" href="#">Tech Talent Recruitment (Developers, QA, DevOps, etc.)
+            &nearr;</a></li>
+        <li><a class=" hover:text-yellow-400" href="#">UI/UX Design & Product Strategy &nearr;</a></li>
+        <li><a class=" hover:text-yellow-400" href="#">Business Analysis & Solution Architecture &nearr;</a></li>
+        <li><a class=" hover:text-yellow-400" href="#">Project & Product Management (Agile/Scrum) &nearr;</a></li>
+        <li><a class=" hover:text-yellow-400" href="#">IT Consulting & Digital Transformation &nearr;</a></li>
+      </ul>
+    </div>
+    <div class="div-6 lg:border-l lg:pl-7 w-100">
+      <img src="images/2.gif" alt="Service 1" class="w-60 h-60" />
+      <h2 class="font-bold text-xl pb-4 text-white">Emerging Technologies & Innovation</h2>
+      <p>Involve the development and adoption of new tech to drive progress and solve complex problems.</p>
+      <ul>
+        <li>
+          <a class=" hover:text-yellow-400" href="#">Blockchain & Web3 Development &nearr;</a>
+        </li>
+        <li><a class=" hover:text-yellow-400" href="#">AR/VR Development &nearr;</a></li>
+        <li><a class=" hover:text-yellow-400" href="#">Startup Tech Advisory & MVP Development &nearr;</a></li>
+        <li><a class=" hover:text-yellow-400" href="#">Digital Product Discovery & Prototyping &nearr;</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="sub-container mt-20">
+    <div class="italic flex justify-center text-xl lg:text-8xl md:text-6xl font-bold text-gray-300/10  leading-none
+">
+      <h1>WORK</h1>
+    </div>
+
+    <div
+      class="inner-container flex justify-center flex-col items-center relative bottom-3 md:bottom-4 lg:bottom-5 left-4 italic lg:text-2xl  text-white leading-tight
+">
+      <h3 class="text-white mt-0"> Our Latest Project</h3>
+    </div>
+
+  </div>
+
+  <div class="swiper mySwiper w-full">
+    <div class="swiper-wrapper ">
+      <div class="swiper-slide  p-4  bg-[#373731] rounded-lg">
+        <img src="images/Frame-1261155414.png" alt="Work 1" class="w-full h-auto object-cover rounded mb-5" />
+        <span class="text-[#c6a117] rounded-lg px-2 py-2 bg-[#46402b] text-sm w-fit">ANAQUA</span>
+        <h1 class="text-white text-xl md:text-2xl font-bold pt-5">School Management Project</h1>
+        <div class="flex flex-wrap gap-2 md:gap-5 text-white text-sm md:text-[17px] mt-4 mb-4">
+          <p class="bg-[#403f3e] rounded px-2 py-1">Application</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">Website</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">Dash Board</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">Design</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">Branding</p>
+        </div>
+        <div>
+          <p class="text-white">Technologies:</p>
+        </div>
+        <div class="flex flex-wrap gap-2 md:gap-6 mt-2 text-white text-sm md:text-[17px] border-b pb-4 pt-6">
+          <p class="bg-[#403f3e] rounded px-2 py-1">Node Js</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">React JS</p>
+        </div>
+        <div>
+          <button class="text-[#c6a117] px-4 py-2">View Project</button>
+        </div>
+      </div>
+
+      <div class="swiper-slide p-4  bg-[#373731] rounded-lg ">
+        <img src="images/45.jpg" alt="Work 1" class="w-full h-auto object-cover rounded mb-5" />
+        <span class="text-[#c6a117] rounded-lg px-2 py-2 bg-[#46402b] text-sm w-fit">ANAQUA</span>
+        <h1 class="text-white text-xl md:text-2xl font-bold pt-5">Salon Booking Project</h1>
+        <div class="flex flex-wrap gap-2 md:gap-5 text-white text-sm md:text-[17px] mt-4 mb-4">
+          <p class="bg-[#403f3e] rounded px-2 py-1">Application</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">Website</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">Dash Board</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">Design</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">Branding</p>
+        </div>
+        <div>
+          <p class="text-white">Technologies:</p>
+        </div>
+        <div class="flex flex-wrap gap-2 md:gap-6 mt-2 text-white text-sm md:text-[17px] border-b pb-4 pt-6">
+          <p class="bg-[#403f3e] rounded px-2 py-1">Node Js</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">React JS</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">React Native</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">Word Press</p>
+        </div>
+        <div>
+          <button class="text-[#c6a117] px-4 py-2">View Project</button>
+        </div>
+      </div>
+
+      <div class="swiper-slide  p-4  bg-[#373731] rounded-lg">
+        <img src="images/Frame-1261155413.png" alt="Work 1" class="w-full h-auto object-cover rounded mb-5" />
+        <span class="text-[#c6a117] rounded-lg px-2 py-2 bg-[#46402b] text-sm w-fit">ANAQUA</span>
+        <h1 class="text-white text-xl md:text-2xl font-bold pt-5">Doctor Appointment Booking</h1>
+        <div class="flex flex-wrap gap-2 md:gap-5 text-white text-sm md:text-[17px] mt-4 mb-4">
+          <p class="bg-[#403f3e] rounded px-2 py-1">Application</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">Website</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">Dash Board</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">Design</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">Branding</p>
+        </div>
+        <div>
+          <p class="text-white">Technologies:</p>
+        </div>
+        <div class="flex flex-wrap gap-2 md:gap-6 mt-2 text-white text-sm md:text-[17px] border-b pb-4 pt-6">
+          <p class="bg-[#403f3e] rounded px-2 py-1">Node Js</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">React JS</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">Word Press</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">React Native</p>
+        </div>
+        <div>
+          <button class="text-[#c6a117] px-4 py-2">View Project</button>
+        </div>
+      </div>
+
+      <div class="swiper-slide p-4 bg-[#373731] rounded-lg">
+        <img src="images/Group-1171275116-1.png" alt="Work 1" class="w-full h-auto object-cover rounded mb-5" />
+        <span class="text-[#c6a117] rounded-lg px-2 py-2 bg-[#46402b] text-sm w-fit">ANAQUA</span>
+        <h1 class="text-white text-xl md:text-2xl font-bold pt-5">Islamic Development Bank Institute</h1>
+        <div class="flex flex-wrap gap-2 md:gap-5 text-white text-sm md:text-[17px] mt-4 mb-4">
+          <p class="bg-[#403f3e] rounded px-2 py-1">Application</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">Website</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">Dash Board</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">Design</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">Branding</p>
+        </div>
+        <div>
+          <p class="text-white">Technologies:</p>
+        </div>
+        <div class="flex flex-wrap gap-2 md:gap-6 mt-2 text-white text-sm md:text-[17px] border-b pb-4 pt-6">
+          <p class="bg-[#403f3e] rounded px-2 py-1">Node Js</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">React JS</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">Word Press</p>
+          <p class="bg-[#403f3e] rounded px-2 py-1">React Native</p>
+        </div>
+        <div>
+          <button class="text-[#c6a117] px-4 py-2">View Project</button>
+        </div>
+
+
+
+      </div>
+    </div>
+    <div class="my-prev w-10">
+      <img src="icons/reshot-icon-arrow-left-UZDAC2LESG.svg" alt="Prev">
+    </div>
+
+    <div class="my-next w-10">
+      <img src="icons/reshot-icon-right-arrow-UCA8NGYZDJ.svg" alt="Next">
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+  </div>
+
+
+
+
+
+  <div class="flex justify-center mt-10">
+    <button class="px-4 py-2 text-[#c6a117] font-bold rounded hover:cursor-pointer border-1 rounded border-[#c6a117] ">
+      There's More To See
+    </button>
+
+  </div>
+
+  <div class="sub-container mt-20">
+    <div class="italic flex justify-center text-3xl lg:text-8xl md:text-6xl font-bold text-gray-300/10  leading-none
+">
+      <h1>Where We Excel</h1>
+    </div>
+
+    <div
+      class="inner- container flex justify-center flex-col items-center relative bottom-3 md:bottom-4 lg:bottom-5 left-4 italic lg:text-2xl  text-white leading-tight">
+      <h3 class="text-white mt-0"> Like Really Excel</h3>
+    </div>
+
+    <div>
+
+
+
+      <div class=" flex flex-wrap items-center justify-center gap-3 ml-5 text-[#aaaaa9] text-lg ">
+        <div class=" p-6 w-105 bg-[#373731] rounded-lg  pb-5">
+          <img src="images/p-1-1.webp" alt="Service 1" class="w-100 h-60 object-center mt-5 mb-5 rounded-lg" />
+          <h1 class=" text-2xl font-bold text-white pt-3 pb-4">AI Development That Solves Real Business Problems</h1>
+          <p class="pb-5">Competitors are training AI. We’re breeding cyborg geniuse.</p>
+          <ul class="pb-10 text-[15px]">
+            <li class="pb-3">
+              <a href="#">Bespoke machine learning that actually works</a>
+            </li>
+            <li class="pb-3"><a href="#">Data Analytics and BI &nearr;</a></li>
+            <li class="pb-3"><a href="#">Generative AI tools employees want to use (not tolerate)</a></li>
+            <li class="pb-3"><a href="#">Predictive analytics so sharp, they’ll think you’ve got a crystal ball</a>
+            </li>
+          </ul>
+          <div>
+            <button class="text-[#c6a117] px-4 py-2 border-t pt-5">Make Data your Slave </button>
+          </div>
+
+        </div>
+
+
+        <div class=" p-6 w-105 bg-[#373731] rounded-lg  pb-5">
+          <img src="images/p-2-1.webp" alt="Service 1" class="w-100 h-60 object-center mt-5 mb-5 rounded-lg" />
+          <h1 class="text-2xl font-bold text-white pt-3 pb-4">Software That Works Like Your Best Employee</h1>
+          <p class="pb-5">If your current apps were people, you’d fire them.</p>
+          <ul class="pb-10 text-[15px]  ">
+            <li class="pb-3">
+              <a href="#">Web/mobile apps users crave (not just tolerate)</a>
+            </li class="pb-3">
+            <li class="pb-3"><a href="#">Code so clean, it sparkles (no duct-tape solutions)</a></li>
+            <li class="pb-3"><a href="#">UX so intuitive, even your CEO can use it</a></li>
+
+          </ul>
+
+          <div>
+            <button class="text-[#c6a117] px-4 py-2 border-t pt-5">See apps that don’t suck
+            </button>
+          </div>
+        </div>
+
+
+
+
+        <div class=" p-6 w-100 bg-[#373731] rounded-lg  ">
+          <img src="images/p-3-1.webp" alt="Service 1" class="w-100 h-60 object-center mt-5 mb-5 rounded-lg" />
+          <h1 class="text-2xl font-bold text-white pt-3 pb-4">Cloud Migrations That Won’t Make You Cry</h1>
+          <p class="pb-5">Most “cloud experts” are just kids with AWS coupons.</p>
+          <ul class=" pb-10 text-[15px]">
+            <li class="pb-3">
+              <a href="#">Zero-downtime cloud transitions (yes, it’s possible)</a>
+            </li>
+            <li class="pb-3"><a href="#">Infrastructure that scales faster than your ambitions</a></li>
+            <li class="pb-3"><a href="#">Security tighter than Fort Knox’s Instagram DMsBig Data Solution &nearr;</a>
+            </li>
+          </ul>
+
+          <div>
+            <button class="text-[#c6a117] px-4 py-2 border-t pt-5">Cloud without the clown show
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+      <div class="vjfjg mt-20 bg-[#373731]">
+
+        <div class="sub-container ">
+          <div
+            class="italic flex justify-center md:text-5xl lg:text-6xl text-2xl font-bold text-gray-300/10 leading-none pt-25">
+            <h1>FOR THOSE WHO LIKE PROOF</h1>
+
+          </div>
+          <div
+            class="inner- container flex justify-center flex-col items-center relative bottom-2 md:bottom-4 lg:bottom-5 italic lg:text-2xl  text-white leading-tight
+">
+            <h3 class="text-white mt-0"> Recent Wins from our digital DOJO:</h3>
+          </div>
+
+          <div class="inner-container flex flex-wrap gap-5 lg:pr-2 items-center justify-center relative bottom-3 md:bottom-4 pt-7 lg:bottom-5  italic lg:text-2xl text-white leading-tight">
+            <div>
+              <h4 class="lg:text-xl text-[15px] font-bold mt-5 text-center text-[#dab513] lg:pb-3">🔥 Built an AI pricing engine</h4>
+              <p>that boosted e-commerce profits by 37%</p>
+            </div>
+            <div>
+              <h4 class="lg:text-xl text-[15px] font-bold text-[#dab513] lg:pb-3">🔥 Replaced a Fortune 500’s 20-year-old ERP</h4>
+              <p>without business hiccups</p>
+            </div>
+            <div>
+              <h4 class="lg:text-xl text-[15px] font-bold text-[#dab513] lg:pb-3">🔥 Stopped 3 attempted breaches</h4>
+              <p>before the client even noticed</p>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-center ">
+              <button
+                class="px-4 py-2 mb-16 text-[#c6a117] font-bold rounded hover:cursor-pointer border-1 rounded border-[#c6a117] ">
+                There's More To See
+              </button>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="sub-container ">
+        <div
+          class="italic flex justify-center md:text-5xl lg:text-6xl text-xl font-bold text-gray-300/10  leading-none pt-25">
+          <h1>WHY THIS WORKS</h1>
+
+        </div>
+        <div
+          class="inner-container flex justify-center flex-col items-center relative bottom-2 md:bottom-4 lg:bottom-5 italic text-[12px] lg:text-2xl text-white leading-tight">
+          <h3 class="text-white  mt-0"> HOW WE CREATE THIS</h3>
+        </div>
+
+        <div class="main-container flex flex-wrap justify-center mb-10">
+          <div class="bg-[#34332e] mx-3 my-3 px-3 py-10 px-10 rounded-lg">
+            <h2 class="text-xl font-bold text-[#dab513]">🔥 Personality Over Platitudes</h2>
+            <p class="text-xl w-80 text-center pt-5 text-white">Ditch "excellence" for warrior analogies</p>
+          </div>
+
+
+          <div class="bg-[#34332e] mx-3 my-3 px-3 py-10 px-10 rounded-lg">
+            <h2 class="text-xl font-bold text-[#dab513]">🔥 Benefit-Driven Headlines</h2>
+            <p class="text-xl w-80 text-center pt-5 text-white">Every section screams "what’s in it for you"</p>
+          </div>
+
+
+
+          <div class="bg-[#34332e] mx-3 my-3 px-3 py-10 px-10 rounded-lg">
+            <h2 class="text-xl font-bold text-[#dab513]">🔥 Conversational CTAs</h2>
+            <p class="text-xl w-80 text-center pt-5 text-white">"Make data yours" converts better than "Learn more"
+            </p>
+          </div>
+
+
+          <div class="bg-[#34332e] mx-3 my-3 px-3 py-10 px-10 rounded-lg">
+            <h2 class="text-xl font-bold text-[#dab513]">🔥 Social Proof Without Bragging</h2>
+            <p class="text-xl w-80 text-center pt-5 text-white">Case studies as "wins" not dry testimonials</p>
+          </div>
+
+
+          <div class="bg-[#34332e] mx-3 my-3 px-3 py-10 px-10 rounded-lg">
+            <h2 class="text-xl font-bold text-[#dab513]">🔥 Interactive Elements</h2>
+            <p class="text-xl w-80 text-center pt-5 text-white">The checkbox selector boosts engagement</p>
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+
+      <div
+        class="relative w-full flex flex-col rounded-lg my-10 text-white bg-[url('/images/ai-generated-8775228_1920.png')] bg-cover bg-center">
+
+
+        <div class="absolute inset-0 bg-black/80 "></div>
+
+
+        <div class="relative z-20 flex flex-col items-center">
+
+         <div
+            class="italic flex justify-center md:text-5xl lg:text-8xl text-2xl font-bold text-gray-300/10 leading-none pt-25">
+            <h1>EXPERTISE</h1>
+
+          </div>
+          <div
+            class="inner- container flex justify-center flex-col items-center relative bottom-2 md:bottom-4 lg:bottom-5 italic lg:text-2xl  text-white leading-tight
+">
+            <h3 class="text-white mt-0">Why we are Different</h3>
+          </div>
+
+          <p class="py-20 text-center text-2xl text-[#c6a117]">
+            We Actually Care About Results
+          </p>
+
+          <ul class="text-center pb-10 space-y-2">
+            <li>No Yes-Men – We’ll challenge bad ideas (then build brilliant ones)</li>
+            <li>Zero BS Tech Stack – Only tools that solve your problems</li>
+            <li>Warrior Mentality – We fight for your success like it’s our own</li>
+          </ul>
+
+          <div class="flex justify-center">
+            <button
+              class="px-4 py-2 mb-16 text-[#c6a117] font-bold border border-[#c6a117] hover:bg-[#c6a117] hover:text-black transition">
+              Meet The Team Crazy Enough to Work
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="flex flex-wrap flex-col justify-center items-center mb-5">
+
+        <div
+            class="italic flex justify-center md:text-5xl lg:text-8xl text-2xl font-bold text-gray-300/10 leading-none pt-25">
+            <h1>WE COULD:</h1>
+
+          </div>
+          <div
+            class="inner- container flex justify-center flex-col items-center relative bottom-2 md:bottom-4 lg:bottom-5 italic lg:text-2xl text-white leading-tight
+">
+            <h3 class="text-white mt-0">WANT EVEN MORE EDGE?</h3>
+          </div>
+        <P class="w-100 text-center text-white mt-10 gap-15 text-[20px]">
+          Add a “Hall of Shame” (common tech fails we fix)
+          Include a “No-BS Tech Quiz” (fun lead gen)
+          Swap the warrior theme for heist/space/superhero metaphors
+        </P>
+
+        <div class="flex justify-center mb-10">
+          <img src="images/updated-image-video.png" class="max-w-full h-auto"/>
+        </div>
+      </div>
+
+
+
+      <div class="w-full flex flex-wrap justify-between items-center text-white lg:gap-30 bg-[#34332e] px-4 sm:px-6 lg:px-10 mb-20 py-5">
+        <div class="flex">
+
+          <span class="text-center text-[18px] pt-1">Products By</span>
+          <img src="images/Group.svg" />
+        </div>
+        <div class="flex flex-wrap justify-center items-center lg:gap-15 gap-2">
+          <div class="px-5 py-5 my-5 rounded-lg bg-[#41403a]">
+            <img src="images/RestoReel-rhcu19c0b2exnc1fh03y8qbuk68tu3s88fux2m6n8s.png" alt="" />
+          </div>
+          <div class="px-5 py-5 lg:my-5 rounded-lg bg-[#41403a]">
+            <img src="images/schoo.svg" alt="" />
+          </div>
+          <div class="px-5 py-5 lg:my-5 rounded-lg bg-[#41403a]">
+            <img src="images/ezpik.svg" alt="" />
+          </div>
+          <div class="px-5 py-5 lg:my-5 rounded-lg bg-[#41403a]">
+            <p>Legaci.Ai</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div
+            class="italic flex justify-center md:text-5xl lg:text-8xl text-2xl font-bold text-gray-300/10 leading-none pt-25">
+            <h1>OUR BLOGS</h1>
+
+          </div>
+          <div
+            class="inner- container flex justify-center flex-col items-center relative bottom-2 md:bottom-4 lg:bottom-5 italic lg:text-2xl text-white leading-tight
+">
+            <h3 class="text-white mt-0">SEE OUR LATEST BLOGS</h3>
+          </div>
+
+
+
+      <div class="swiper mySwiper2 w-full text-white">
+        <div class="swiper-wrapper ">
+
+          <div class="swiper-slide  p-4  bg-[#373731] rounded-lg">
+            <span class="relative top-7 bg-gray-200/40 rounded-lg p-1">Problem</span>
+            <span class="relative top-7 bg-gray-200/40 rounded-lg p-1">Problem Solving</span>
+            <img src="images/f22-1-1.png" class="w-100 h-70 pb-5" />
+            <h1 class="text-2xl font-bold w-90">
+
+              10 Reasons to Invest in Responsive Web Design</h1>
+            <div class="flex items-center gap-1 flex-wrap ">
+              <img src="icons/profile-circle-svgrepo-com.svg" class=" w-10 text-center" />
+              <h4>Whetstonez</h4>
+              <hr>
+              <p>December 6, 2023</p>
+            </div>
+            <p class="pb-10 pt-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis augue massa, imperdiet in nulla vel,
+              vehicula
+              commodo tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elementum dapibus nisi, quis
+              maximus lorem hendrerit ac. Etiam libero neque.</p>
+            <button>View More</button>
+
+
+          </div>
+
+
+          <div class="swiper-slide  p-4  bg-[#373731] rounded-lg">
+            <span class="relative top-7 bg-gray-200/40 rounded-lg p-1">Problem</span>
+            <span class="relative top-7 bg-gray-200/40 rounded-lg p-1">Problem Solving</span>
+            <img src="images/Cybersecurity-1536x1233.jpg" class="w-100 h-70 pb-5" />
+            <h1 class="text-2xl font-bold mb-5 w-90">
+
+              Cybersecurity for Small and Medium Businesses: Why It’s Not Just for the Big Players</h1>
+            <div class="flex items-center gap-1 flex-wrap ">
+              <img src="icons/profile-circle-svgrepo-com.svg" class=" w-10 text-center" />
+              <h4>Whetstonez</h4>
+              <hr>
+              <p>December 6, 2023</p>
+            </div>
+            <p class="pb-10 pt-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis augue massa, imperdiet in nulla vel,
+              vehicula
+              commodo tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elementum dapibus nisi, quis
+              maximus lorem hendrerit ac. Etiam libero neque.</p>
+            <button>View More</button>
+
+
+          </div>
+
+
+
+          <div class="swiper-slide  p-4  bg-[#373731] rounded-lg">
+            <span class="relative top-7 bg-gray-200/40 rounded-lg p-1">Development</span>
+            <span class="relative top-7 bg-gray-200/40 rounded-lg p-1">Tech</span>
+            <img src="images/Top-10-Web-Design-and-development-companies-jeddah-1536x640.jpeg"
+              class="w-100 rounded-lg h-70 pb-5" />
+            <h1 class="text-2xl font-bold w-90 mb-5">
+
+              Top 10 Web Design and development companies Jeddah</h1>
+            <div class="flex items-center gap-1 flex-wrap ">
+              <img src="icons/profile-circle-svgrepo-com.svg" class=" w-10 text-center" />
+              <h4>Whetstonez</h4>
+              <hr>
+              <p>December 6, 2023</p>
+            </div>
+            <p class="pb-10 pt-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis augue massa, imperdiet in nulla vel,
+              vehicula
+              commodo tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elementum dapibus nisi, quis
+              maximus lorem hendrerit ac. Etiam libero neque.</p>
+            <button>View More</button>
+
+
+          </div>
+
+
+
+          <div class="swiper-slide  p-4  bg-[#373731] rounded-lg">
+             <span class="relative top-7 bg-gray-200/40 rounded-lg p-1">Development</span>
+            <span class="relative top-7 bg-gray-200/40 rounded-lg p-1">Tech</span>
+            <img src="images/pay-per-call-ppc--1536x640.png" class="w-100 h-70 pb-5" />
+            <h1 class="text-2xl mb-5 font-bold w-90">
+
+              Maximize results with pay-per-click (PPC)</h1>
+            <div class="flex items-center gap-1 flex-wrap ">
+              <img src="icons/profile-circle-svgrepo-com.svg" class=" w-10 text-center" />
+              <h4>Whetstonez</h4>
+              <hr>
+              <p>December 6, 2023</p>
+            </div>
+            <p class="pb-10 pt-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis augue massa, imperdiet in nulla vel,
+              vehicula
+              commodo tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elementum dapibus nisi, quis
+              maximus lorem hendrerit ac. Etiam libero neque.</p>
+            <button>View More</button>
+
+
+          </div>
+
+
+          <div class="swiper-slide  p-4  bg-[#373731] rounded-lg">
+            <img src="images/7-steps-to-take-after-a-website-launch.jpeg" class="w-100 h-70 pb-5" />
+            <h1 class="text-2xl font-bold w-90 mb-5">
+
+              7 Steps to Take after a Website Launch</h1>
+            <div class="flex items-center gap-1 flex-wrap ">
+              <img src="icons/profile-circle-svgrepo-com.svg" class=" w-10 text-center" />
+              <h4>Whetstonez</h4>
+              <hr>
+              <p>December 6, 2023</p>
+            </div>
+            <p class="pb-10 pt-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis augue massa, imperdiet in nulla vel,
+              vehicula
+              commodo tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elementum dapibus nisi, quis
+              maximus lorem hendrerit ac. Etiam libero neque.</p>
+            <button>View More</button>
+
+
+          </div>
+
+          <div class="swiper-slide  p-4  bg-[#373731] rounded-lg">
+            <span class="relative top-7 bg-gray-200/40 rounded-lg p-1">Development</span>
+            <span class="relative top-7 bg-gray-200/40 rounded-lg p-1">Tech</span>
+            <img src="images/Custom-Website-Design-2-1.png" class="w-100 h-70 pb-5" />
+            <h1 class="text-2xl font-bold w-90 mb-5">
+
+              Custom Website Design Company 2024</h1>
+            <div class="flex items-center gap-1 flex-wrap ">
+              <img src="icons/profile-circle-svgrepo-com.svg" class=" w-10 text-center" />
+              <h4>Whetstonez</h4>
+              <hr>
+              <p>December 6, 2023</p>
+            </div>
+            <p class="pb-10 pt-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis augue massa, imperdiet in nulla vel,
+              vehicula
+              commodo tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elementum dapibus nisi, quis
+              maximus lorem hendrerit ac. Etiam libero neque.</p>
+            <button>View More</button>
+
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+      <div class="flex justify-center items-center flex-wrap gap-5 ">
+        <div class="my-prev2 w-10 relative bg-[#34332e] rounded-full p-2 ">
+          <img src="icons/icons8-arrow-left-50.png" alt="Prev-2">
+        </div>
+
+        <div class="my-next2 w-10 bg-[#34332e] rounded-full p-2">
+          <img src="icons/icons8-arrow-right-50.png" alt="Next-2">
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+
+      </div>
+
+
+
+      <div
+            class="italic flex justify-center md:text-5xl lg:text-8xl text-2xl font-bold text-gray-300/10 leading-none pt-25">
+            <h1>OUR PARTNERS</h1>
+
+          </div>
+          <div
+            class="inner- container flex justify-center flex-col items-center relative bottom-2 md:bottom-4 lg:bottom-5 italic lg:text-2xl text-white leading-tight
+">
+            <h3 class="text-white mt-0">Strong Partnership, Shared Success.</h3>
+          </div>
+
+      <div class="flex flex-wrap justify-center items-center gap-3">
+        <div>
+          <img src="images/partner-1.png" />
+        </div>
+        <div>
+          <img src="images/partner-2.png" />
+        </div>
+        <div>
+          <img src="images/partner-3.png" />
+        </div>
+      </div>
+
+
+      <div class="reviews-container bg-[#383731] mt-18 pb-10 ">
+        <div
+            class="italic flex justify-center md:text-5xl lg:text-8xl text-2xl font-bold text-gray-300/10 leading-none pt-25">
+            <h1>REVIEWS</h1>
+
+          </div>
+          <div
+            class="inner- container flex justify-center flex-col items-center relative bottom-2 md:bottom-4 lg:bottom-5 italic lg:text-2xl text-white leading-tight
+">
+            <h3 class="text-white mt-0">LETS HEAR FROM 100 WORLD WIDE CLIENTS</h3>
+          </div>
+
+
+        <div class="swiper mySwiper3 w-full text-white">
+          <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide text-white bg-[#373731] rounded-lg p-6">
+              <h1 class="text-2xl font-bold pb-5">THOROUGHLY IMPRESSED</h1>
+              <p class="text-[20px] leading-relaxed">
+                I am thoroughly impressed with their service! Their support is top-notch, always
+                responsive, and they offer exceptional customization to meet specific needs. A truly professional team
+                that delivers every time. Highly recommend!
+              </p>
+              <div class="flex items-center gap-3 mt-5">
+                <div class="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center text-2xl font-bold">
+                  MN
+                </div>
+                <h3>Muhammad Nseir</h3>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide text-white bg-[#373731] rounded-lg p-6">
+              <h1 class="text-2xl font-bold pb-5">شركة ممتازة</h1>
+              <p class="text-[20px] leading-relaxed">
+                في الحقيقه تم التعامل مع الشركه ويتستونز وكان التعامل في غاية الرقي والاحترافية Whetstonez it's
+                excellent company
+              </p>
+              <div class="flex items-center gap-3 mt-5">
+                <div class="w-16 h-16">
+                  <img src="images/placeholder.png" class="rounded-full" />
+                </div>
+                <div>
+                  <h3>Anas Kutbhi</h3>
+                  <p class="text-sm text-gray-400">Businessman</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide text-white bg-[#373731] rounded-lg p-6">
+              <h1 class="text-2xl font-bold pb-5">أفضل الشركات التي تقدم الخدمات</h1>
+              <p class="text-[20px] leading-relaxed">
+                احد افضل الشركات التي تقدم خدمات للشركات في السعودية وخاصة في المنطقة الغربية
+              </p>
+              <div class="flex items-center gap-3 mt-5">
+                <div class="w-16">
+                  <img src="images/df808745d4eeae509bbfb902288411fb819999c2.jpg" class="rounded-full" />
+                </div>
+                <div>
+                  <h3>Abdulaziz Ibrahim</h3>
+                  <p class="text-sm text-gray-400">Businessman</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 - Extra slide for demo -->
+            <div class="swiper-slide text-white bg-[#373731] rounded-lg p-6">
+              <h1 class="text-2xl font-bold pb-5">EXCELLENT SERVICE</h1>
+              <p class="text-[20px] leading-relaxed">
+                Outstanding quality and professionalism. The team went above and beyond to ensure our satisfaction.
+                Will definitely work with them again!
+              </p>
+              <div class="flex items-center gap-3 mt-5">
+                <div class="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center text-2xl font-bold">
+                  <img src="images/1unnamed.png" />
+                </div>
+                <div>
+                  <h3>John Smith</h3>
+                  <p class="text-sm text-gray-400">CEO</p>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+
+
+
+
+          <!-- Navigation Buttons -->
+          <div class="flex justify-center items-center gap-5 mt-6 ">
+            <div class="my-prev3 bg-[#34332e] rounded-full p-2">
+              <img src="icons/icons8-arrow-left-50.png" />
+            </div>
+
+            <div class="my-next3 bg-[#34332e] rounded-full p-2">
+              <img src="icons/icons8-arrow-right-50.png" />
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+      <div class="mt-30 flex flex-col  flex-wrap items-center justify-center text-white text-xl gap-5 mb-10">
+        <button
+          class="px-4 py-2 text-[#c6a117] font-bold rounded hover:cursor-pointer border-1 rounded border-[#c6a117] ">
+          There's More To See
+        </button>
+        <p>or Contact us on:</p>
+        <div class="flex  gap-3">
+          <img class="w-5" src="icons/calling-icon.png" />
+          <p> (+966) 55 222 6985</p>
+        </div>
+
+        <div class="flex  gap-3">
+          <img class="w-5" src="icons/mail-box.png" />
+          <p>info@Whetstonez.com</p>
+        </div>
+      </div>
+
+      <hr class="text-white" />
+
+      <footer class="flex flex-wrap items-center text-white pt-20">
+        <div class="w-full flex-col flex justify-center items-center md:w-1/2 lg:w-1/4 h-96">
+          <img src="images/Clip-path-group.png" />
+          <p class=" w-full mt-5 lg:w-80">A digital agency with the sole motive of delivering immaculate digital products &
+            solutions to help your
+            brand disrupt the entire world, Whetstonez is your staircase to reach the moon.</p>
+          <div class="flex mt-5 gap-3"><img src="icons/square-instagram-brands-solid-full.svg" class="w-7" />
+            <img src="icons/square-linkedin-brands-solid-full.svg" class="w-7" />
+            <img src="icons/twitter-brands-solid-full.svg" class="w-7" />
+            <img src="icons/facebook-brands-solid-full.svg" class="w-7" />
+          </div>
+
+          <button class=" p-4 w-50 border-[#a78a1a] text-[#a78a1a] hover:cursor-pointer border-1 rounded-2xl mt-10">
+            Contact Us
+          </button>
+        </div>
+        <div class="w-full flex-col flex justify-center items-center md:w-1/2 lg:w-1/4 h-96">
+
+          <div class="flex  gap-3">
+            <img class="w-5" src="icons/calling-icon.png" />
+            <p> (+966) 55 222 6985</p>
+          </div>
+
+          <div class="flex  gap-3 mt-5">
+            <img class="w-5" src="icons/mail-box.png" />
+            <p>info@Whetstonez.com</p>
+          </div>
+
+          <h1 class="font-bold text-xl">Whetstonez Jeddah Office</h1>
+          <p>Jeddah 23435, Saudi Arabia</p>
+          <iframe class="pt-3 rounded-2xl"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d870883.2191728009!2d73.20263864687497!3d31.4997739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919056584d659c3%3A0xc299669eed7dc798!2sWhetstonez%20-%20software%20company%20in%20Lahore!5e0!3m2!1sen!2s!4v1768655384210!5m2!1sen!2s"
+            width="200" height="130" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+        <div class="w-full flex-col flex flex-wrap justify-center items-center md:w-1/2 lg:w-1/4 h-50">
+          <h1 class=" font-bold ">Working Hours</h1>
+          <p>Saturday - Thursday</p>
+          <p>10:00AM - 7:00PM</p>
+          <p>Friday</p>
+          <p>Closed</p>
+        </div>
+        <div class=" w-full md:w-1/2 lg:w-1/4 h-60">
+          <h1 class="text-xl font-bold">Subscribe to our Newsletter</h1>
+          <div class="border border-[#c4c4c4] rounded-full p-2 mt-4 lg:mx-3 flex items-center gap-2">
+          <input
+              type="email"
+              placeholder="Enter Email Address"
+              class="flex-1 min-w-0 bg-transparent outline-none px-4 text-sm rounded-full"
+          />
+          <button class="rounded-full py-3 px-8 bg-[#ecbe13] text-white">Send</button>
+          </div>
+            <p class="font-bold lg:mt-20 text-center"> Languages</p>
+            <div class="flex flex-wrap items-center gap-3 justify-center pt-5">
+              <p class=" px-2 rounded-lg bg-[#ecbe13] ">EN</p>
+              <p>العربية</p>
+           </div>
+        </div>
+       
+      </footer>
+
+      <hr class="text-[#848484]"/>
+
+      <div class="text-white flex flex-wrap justify-between items-center pb-4 text-sm">
+       <p>Copyright © 2026 Whetstonez Information Technology Company. All rights reserved.</p> 
+        <div class="">
+        <span>Term Of Use</span>
+        <span class="text-5xl">.</span>
+        <span>Privacy Policy</span>
+       </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+      <script src="App.js"></script>
+
+</body>
+
+</html>
